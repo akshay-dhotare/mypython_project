@@ -1,0 +1,62 @@
+
+  
+  .container {
+    margin: 50px auto;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    border: 10px solid;
+    border-top-color: #856036;
+    border-left-color: #5d4426;
+    border-bottom-color: #856036;
+    border-right-color: #5d4426;
+    position: relative;
+  }
+  
+  .photo {
+    position:absolute;
+    animation: round 16s infinite;
+    opacity: 0;
+  }
+  
+  @keyframes round {
+    25% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+  }
+  img:nth-child(1) {
+    animation-delay: 12s;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 8s;
+  }
+  
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  img:nth-child(4) {
+    animation-delay: 0s;
+  }
+
+
+  .navbar {
+    width: 100%;
+    background-color: rgb(215, 186, 186);
+    overflow: auto;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: rgb(21, 14, 14);
+    text-decoration:solid;
+    font-size: 17px;
+    width: 27%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+  }
